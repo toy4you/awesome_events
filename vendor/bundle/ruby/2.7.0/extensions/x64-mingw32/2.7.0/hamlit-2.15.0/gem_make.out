@@ -1,0 +1,21 @@
+current directory: D:/MyGit_NotGitJustTest/RubyOnRails/PerfectRubyOnRails6/awesome_events/vendor/bundle/ruby/2.7.0/gems/hamlit-2.15.0/ext/hamlit
+C:/Ruby27-x64/bin/ruby.exe -I C:/Ruby27-x64/lib/ruby/2.7.0 -r ./siteconf20210715-3228-ubopl6.rb extconf.rb
+creating Makefile
+
+current directory: D:/MyGit_NotGitJustTest/RubyOnRails/PerfectRubyOnRails6/awesome_events/vendor/bundle/ruby/2.7.0/gems/hamlit-2.15.0/ext/hamlit
+make "DESTDIR=" clean
+
+current directory: D:/MyGit_NotGitJustTest/RubyOnRails/PerfectRubyOnRails6/awesome_events/vendor/bundle/ruby/2.7.0/gems/hamlit-2.15.0/ext/hamlit
+make "DESTDIR="
+generating hamlit-x64-mingw32.def
+compiling hamlit.c
+hamlit.c: In function 'escape_html':
+hamlit.c:62:12: warning: comparison of integer expressions of different signedness: 'unsigned int' and 'long int' [-Wsign-compare]
+   62 |   if (size > RSTRING_LEN(str)) {
+      |            ^
+compiling hescape.c
+linking shared-object hamlit/hamlit.so
+
+current directory: D:/MyGit_NotGitJustTest/RubyOnRails/PerfectRubyOnRails6/awesome_events/vendor/bundle/ruby/2.7.0/gems/hamlit-2.15.0/ext/hamlit
+make "DESTDIR=" install
+/usr/bin/install -c -m 0755 hamlit.so ./.gem.20210715-3228-5afem1/hamlit
