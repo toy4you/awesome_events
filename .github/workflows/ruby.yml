@@ -34,11 +34,10 @@ jobs:
       env:
         RAILS_ENV: test
       run: |
-        chmod +x ./gradlew
         sudo apt-get -yqq install libsqlite3-dev
         bundle install --jobs 4 --retry 3
-        bin/rails db:create
-        bin/rails db:migrate
-        bin/yarn install
-        bin/rails test
-        bin/rails test:system
+        rails db:create
+        rails db:migrate
+        yarn install
+        rails test
+        rails test:system
